@@ -26,7 +26,7 @@ async def create_payment_link(amount: float, customer_details : dict, currency: 
                 "email": True
             },
             "description": "Payment Link",
-            "callback_url": "https://ecommerce-frontend-steel-theta.vercel.app/payment-success",
+            "callback_url": "https://osaembroidery.com/payment-success",
             # "callback_url": "http://localhost:5173/payment-success",
             "callback_method": "get"
         }
