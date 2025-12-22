@@ -89,7 +89,7 @@ async def google_callback(request: Request, db : AsyncSession = Depends(get_db))
         # response['message'] = "User Not an Admin"
         return RedirectResponse(url=f'{frontend_add}/loginerror')
     
-    frontend_add = "https://osa-admin-nu.vercel.app"
+    frontend_add = "https://admin.osaembroidery.com"
     frontend_url = f'{frontend_add}/callback?token=scheduler&email={response["email"]}&name={response["full_name"]}&id={response["id"]}&message={response["message"]}'
     return RedirectResponse(frontend_url)
 
