@@ -47,7 +47,7 @@ def login():
  
 frontend_add = "https://scheduler-frontend.bookzone.ai"
 frontend_add = "http://localhost:5173"
-frontend_add = "https://ecommerce-frontend-steel-theta.vercel.app"
+frontend_add = "https://osaembroidery.com"
  
  
 @router.get("/callback")
