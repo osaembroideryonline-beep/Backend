@@ -28,7 +28,7 @@ async def get_products(
 ):
     # Fetch paginated products
     result = await db.execute(
-        select(Product).order_by(Product.date_created.desc(), Product.id.desc()).offset(offset).limit(limit)
+        select(Product).order_by(Product.date_created.desc(),Product.name.asc(), Product.id.desc()).offset(offset).limit(limit)
     )
     products = result.scalars().all()
 
